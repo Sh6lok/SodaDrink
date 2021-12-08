@@ -4,125 +4,23 @@ h1,h2,h3,h4,h5,h6{
 	margin: 0;
 }
 body {
+  background-color:#F2EEEE;
+
   padding: 0;
   margin: 0;
 }
 
-
-/*вступление*/
-
-.intro-inner{
-	width: 100%;
-	margin: 0 auto;
-
-	text-align: center;
+.intro{
+  height: 100vh;
+  width: 100%;
+  background-color: RED;
 }
-
-.intro-header{
-	padding: 4.5% 0% 0.6%;
-	font-size: 5vh;
-	max-width: 45%;
-	font-family: 'Jura', sans-serif;
-	color: white;
-
-	text-align: center;
-	margin: 0 auto;
-
-}
-
-/*ШАПКА*/
 
 .logo{
-	font-size: 5vh;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: white;
-	font-weight: 700;
-	
+  height: 100px;
 }
-.header{
-	padding-top: 0.5%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	font-family: 'Jura', sans-serif;
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-.nav-link{
-
-	color: black;
-	text-decoration: none;
-	font-size: 4.5vh;
-
-}
-
-.nav-link:hover{
-	color: white;
-	transition: 0.3s;
-}
-
-
-/*ИНТРО*/
-.intro {
-	
-	width: 100%;
-	height: 105vh;
-
-	background: url("img/intro.png") center no-repeat;
-	background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.time{
-
-	max-height: 30%;
-	max-width: 98%;
-}
-
-/*Главная*/
-.main{
-	background-color: #F0F0F0;
-	display: flex;
-	justify-content: space-evenly;
-
-	flex-wrap: wrap;/*Автоматический перенос элементов на новую строку при уменьшении ширины страницы*/
-	
-}
-
-.Block{
-	height: 50vh;
-	max-width: 37.04vh;
-
-	background-color: white;
-	text-decoration: none;
-	
-	color: black;
-	
-	padding-bottom: vh;
-	border: 4px solid black;
-	border-radius: 2vh;
-}
-.Block:hover{
-	-moz-user-select: -moz-none;
-	-o-user-select: none;
-	-khtml-user-select: none;
-	-webkit-user-select: none;
-	user-select: none;
-
-	background: url(img/ss.png);
-	background-repeat: no-repeat;
-  background-position: right bottom ;
-  background-size: 9vh;
-
- 	
- 	transition: 0.3s;
- 	box-shadow: 0 0 30px ;
- }
-
-.block_photo{
-	height: 30vh;
-	border-radius: 1.5vh 1.5vh 0 0 ;
-	}
-
-
