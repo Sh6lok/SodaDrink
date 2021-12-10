@@ -1,0 +1,85 @@
+body{
+	padding: 0;
+	margin: 0;
+
+	background-color: #EDEEF0;
+}
+
+h1,h2,h3{
+	margin: 0;
+}
+
+.nav{
+	padding: 8px;
+	background-color: white;
+}
+
+.nav_link{
+	color: black;
+	margin: 0 auto;
+	padding-top: 3px;
+	max-width: 800px;
+	justify-content: flex-start;
+	display: flex;
+}
+
+
+.block{
+	border-radius: 4px;
+	margin: 0 auto;
+	max-width: 750px;
+	margin-top: 40px;
+	background-color: white;
+}
+
+.text1{
+	padding: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 21px;
+	justify-content: center;
+	display: flex;
+}
+
+.text2{
+	margin: 20px;
+	border-radius: 3px;
+	font-size: 13px;
+	font-family: 'Roboto', sans-serif;
+	border: 0.5px solid #DCE1E6;
+	padding: 15px;
+	background-color: #F0F2F5;
+
+}
+.container{
+	font-family: 'Roboto', sans-serif;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+input{
+
+	border: 0.5px solid #DCE1E6;
+	padding: 8px;
+	padding-right: 90px;
+	background-color: ;
+	border-radius: 3px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+.input_box1{
+	padding-bottom: 18px;
+}
+
+.submit{
+	text-align: center;
+	padding-right: 110px;
+	padding-left: 110px;
+	margin-bottom: 60px;
+
+	border-radius: 4px;
+	font-size: 15px;
+	color: white;
+	background-color: #5181B8;
+}

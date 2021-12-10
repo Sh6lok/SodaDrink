@@ -1,0 +1,91 @@
+body{
+	padding: 0;
+	margin: 0;
+
+	background-color: #F9F7F7;
+}
+
+h1,h2,h3{
+	margin: 0;
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+/*Шапка*/
+
+.logo{
+	max-height: 150px;
+}
+
+.nav{
+	justify-content: space-around;
+	display: flex;
+	align-items: center;
+	background-color: white;
+	flex-wrap: wrap;
+}
+
+.nav_link{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav_link:hover{
+	color: black;
+	border: 0px solid;
+	border-radius: 5px;
+
+	padding: 5px;
+	background-color: #EDE9E9;
+	transition: 0.3s;
+}
+
+/*Контент*/
+.new{
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	color: #CFC917;
+	background-color: rgba(251,248,132, 0.6);
+
+
+	border: 0px solid;
+	border-radius: 4px;
+	
+	padding: 6px;
+}
+
+
+.content{
+	margin-top: 5px;
+	padding-top: 10px;
+	background-color: white;
+	padding: 20px;
+}
+
+.main{
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-evenly;
+
+	flex-wrap: wrap;
+}
+
+
+.block{
+	padding: 20px;
+	max-height: 250px;
+}
+
+.block:hover{
+	color: black;
+
+ 	transition: 0.3s;
+ 	box-shadow: 0 0 20px ;
+}
