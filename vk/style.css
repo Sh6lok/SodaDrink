@@ -1,0 +1,109 @@
+body{
+	padding: 0;
+	margin: 0;
+
+	background-color: #F9F7F7;
+}
+
+h1,h2,h3{
+	margin: 0;
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+/*Шапка*/
+
+.logo{
+	max-height: 150px;
+}
+
+.nav{
+	justify-content: space-around;
+	display: flex;
+	align-items: center;
+	background-color: white;
+	flex-wrap: wrap;
+}
+
+.nav_link{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav_link:hover{
+	color: black;
+	border: 0px solid;
+	border-radius: 5px;
+
+	padding: 5px;
+	background-color: #EDE9E9;
+	transition: 0.3s;
+}
+.content{
+	margin-top: 5px;
+	padding-top: 10px;
+	background-color: white;
+	padding: 20px;
+}
+
+/*1*/
+
+.photo{
+	max-height: 350px;
+}
+.name{
+	font-family: 'Roboto Condensed';
+	font-size: 40px;
+}
+
+.description{
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 25px;
+	color: #9E9E9E;
+}
+.text{
+	border: 0px solid;
+	background-color: rgba(95, 195, 242, 0.6);
+	font-size: 23px;
+	font-family: 'Nunito Sans', sans-serif;
+}
+/*button*/
+.btn{
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	
+}
+.autohorization{
+	font-family: 'Comfortaa', cursive;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+
+	border: 0px solid;
+	border-radius: 5px;
+	background-color:#6483F7;
+	padding: 10px;
+}
+
+
+.buy{
+	margin-top:6% ;
+	margin-left: 54%;
+	font-family: 'Comfortaa', cursive;
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+
+	border: 0px solid;
+	border-radius: 5px;
+	background-color:#64F76D;
+	padding: 10px;
+}
