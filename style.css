@@ -1,0 +1,573 @@
+@import 'reset.css';
+ 
+*{
+    color: black;
+    outline: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #ECECEC;
+}
+
+body::after{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: '';
+    opacity: .03;
+    pointer-events: none;
+    z-index: -1;
+    background: url(img/elements/noise.gif);
+
+}
+
+.container{
+    margin: 0 auto;
+    width: 72%;
+
+}
+.container_big{
+    margin: 0 auto;
+    width: 90%; 
+}
+.container_full{
+    margin: 0 auto;
+    width: 100%; 
+}
+/*Разное*/
+.btn{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-family: 'Poppins-Black';
+    background-color: black;
+    color: #ffffff;
+    font-size: calc(36 * 100vw / 1920);
+    border-radius: calc(24 * 100vw / 1920);
+    padding: calc(14 * 100vw / 1920) calc(48 * 100vw / 1920);
+    width: 90%;
+}
+/* .btn:hover {
+    box-shadow: 1px 1px 25px 10px rgba(0, 0, 0, 0.4);
+} */
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.btn:hover:before {
+  left: 100%;
+}
+.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+  }
+/*Шапки секций*/
+.header_section.service{
+    margin-bottom: 7%;
+}
+.header_section,.bottom_section{
+    width: 100%;
+    height: calc(160 * 100vw / 1920);
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4%;
+    user-select: none;
+}
+.bottom_section{
+    margin-top: -8%;
+    z-index: -2;
+    user-select: none;
+}
+.header_section p{
+    width: 100%;
+    font-size: calc(120 * 100vw / 1920);
+    font-family: 'Nighty';
+}
+.header_section .corner,.bottom_section .corner{
+    width: 12%;
+    position: absolute;
+    top: 0;
+}
+.servis_stars{
+    width: 7%;
+    position: absolute;
+    top: 34%;
+    right: 4%;
+}
+.planet{
+    width: 5%;
+    position: absolute;
+    top: 34;
+    left: 4%;
+}
+
+.header_section img:nth-child(1){
+    right: 0;
+    transform: scale(-1, 1);
+}
+.header_section img:nth-child(2){
+    left: 0;
+}
+.bottom_section img:nth-child(1){
+    right: 0;
+    transform: scale(-1, -1);
+}
+.bottom_section img:nth-child(2){
+    transform: scale(1, -1);
+    left: 0;
+}
+/*nav*/
+.header{
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    transition: .3s;
+}
+.header.stiky{
+    opacity: 1;
+    background-color: #ececec;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.btn.nav{
+    justify-content: center;
+    margin: 0;
+    width: 26%;
+    height: 80%;
+}
+.nav_element{
+    font-family: 'Poppins-Regular';
+    font-size: calc(20 * 100vw / 1920);
+    
+    border-radius: calc(24 * 100vw / 1920);
+    padding: calc(10 * 100vw / 1920) calc(20 * 100vw / 1920);
+    background-color: #ececec;
+}
+.nav_element a{ 
+    margin:calc(20 * 100vw / 1920);
+}
+
+/*Главная надпись*/
+.main{
+    padding: 6% 0 4% 0;
+}
+.content_main{
+    position: relative;
+    width: 100%;
+}
+
+.main_text_block img{
+    user-select: none;
+    width: 12%;
+    position: absolute;
+}
+.main_text_block img:nth-child(1){
+    right: 0;
+    bottom: 0;
+}
+.main_text_block img:nth-child(4){
+    top: 0;
+    left: 0;
+}
+
+.main_title{
+    width: 100%;
+    text-align: center;
+    font-size: calc(120 * 100vw / 1920);
+    font-family: 'Nighty';
+    line-height: 63%;
+}
+.main_description{
+    width: 100%;
+    padding-top: 8%;
+    text-align: center;
+    font-size: calc(42 * 100vw / 1920);
+    color: #3F3F3F;
+    font-family: 'Nighty';
+    line-height: 83%;
+}
+
+.main_text_block{
+    padding: 3% 0 2% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Галлерея*/
+
+.content_gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 16.2%);
+    grid-gap: calc(10 * 100vw / 1920);
+    object-fit: contain;
+}
+
+.gallery_element{
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-color: transparent;
+    object-fit: cover;
+    overflow: hidden;
+    border-style: solid;
+    border-radius: calc(24 * 100vw / 1920);
+}
+.gallery_element_big{
+    height: calc(350 * 100vw / 1920);
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    margin-top: calc(-115 * 100vw / 1920);
+    border-radius: calc(24 * 100vw / 1920);
+}
+.gallery_element.x310{
+    height:calc(310 * 100vw / 1920);
+}
+.gallery_element.x260{
+    height: calc(260 * 100vw / 1920);
+}
+.gallery_element.x380{
+    height: calc(380 * 100vw / 1920);
+}
+.gallery_element.x535{
+    height: calc(535 * 100vw / 1920);
+}
+.gallery_element.x350{
+    height: calc(350 * 100vw / 1920);
+}
+.gallery_element.x400{
+    height: calc(400 * 100vw / 1920);
+}
+.gallery_element.x465{
+    height: calc(465 * 100vw / 1920);
+}
+.gallery_element.x260{
+    height: calc(260 * 100vw / 1920);
+}
+.gallery_element.x330{
+    height: calc(330 * 100vw / 1920);
+}
+
+.gallery_element:nth-child(7){
+    margin-top: calc(-70 * 100vw / 1920);
+}
+.gallery_element:nth-child(n+2):nth-child(-n+5){
+    margin-top: calc(70 * 100vw / 1920);
+}
+.gallery_element:nth-child(9),.gallery_element:nth-child(11){
+   margin-top: calc(-50 * 100vw / 1920);
+}
+
+/*Доступные туры*/
+.tours{
+    margin-top:12%;
+}
+.tour_block{
+    margin: 6% 0 4% 0;
+}
+.tour_block_content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12%;
+}
+.tour_block_content:nth-child(2){
+    margin-bottom: 2%;
+}
+.tour_block_left{
+    width: 30%;
+    position: relative;
+}
+.tour_content_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.tour_block_right{
+    width: 70%;
+}
+.tour_block_title{
+    font-size: calc(100 * 100vw / 1920);
+    font-family: 'Nighty';
+    line-height: 60%;
+}
+.tour_content_inscriptions{
+    font-family: 'Poppins-Regular';
+    font-size: calc(26 * 100vw / 1920);
+    color: #3F3F3F;
+    width: 94%;
+    line-height: 100%;
+    margin: 8% 0 6% 0;
+}
+.tour_content_addition,.tour_content_price{
+    font-family: 'Poppins-Regular';
+    font-size: calc(24 * 100vw / 1920);
+    color: #3F3F3F;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4%;
+}
+.tour_content_addition.date span{
+    border-radius: calc(14 * 100vw / 1920);
+    border: black solid calc(2 * 100vw / 1920);
+    padding: 2% 4%;
+    font-size: calc(28 * 100vw / 1920);
+    color: black;
+}
+.tour_content_addition.people span,.tour_content_addition.price span{
+    font-size: calc(28 * 100vw / 1920);
+    color: black;
+}
+
+.slide-one .owl-item img {
+    height:calc(700 * 100vw / 1920);
+    object-fit: cover;
+    border-radius: calc(24 * 100vw / 1920);
+  }
+
+.btn.add{
+    width: 20%;
+}
+
+.tour_content_btn img{
+    width: calc(122 * 100vw / 1920);
+}
+
+.owl-dots{
+    display: none;
+}
+.indit{
+    margin-top: 12%;
+}
+/*Доступные сервисы*/
+.services_card{
+    width: 90%;
+}
+.slide-two .owl-item img {
+    width:calc(400 * 100vw / 1920);
+    height:calc(450 * 100vw / 1920) ;
+}
+.title_card_services{
+    font-family: 'Poppins-Black';
+    margin: 4% 0 6% 0;
+    font-size: calc(36 * 100vw / 1920);
+    line-height: 60%;
+}
+.description_card_services{
+    font-family: 'Poppins-Regular';
+    font-size: calc(18 * 100vw / 1920);
+    line-height: 110%;
+    color: #3F3F3F;
+}
+
+/*Отзывы*/
+.feedback,.servis{
+    margin: 6% 0 12% 0;
+}
+.feedback_content{
+    display: flex;
+    justify-content: space-around;
+}
+.feedback_card{
+    overflow: hidden;
+    border-radius: calc(24 * 100vw / 1920);
+    width: calc(340 * 100vw / 1920);
+    height: calc(460 * 100vw / 1920);
+    transition: .4s;
+}
+.feedback_card.center{
+    margin-top: 3%;
+}
+.feedback_card img{
+    width: 100%;
+}
+.inscription_feedback{
+    background-color: #e0e0e0;
+    height: 100%;
+}
+.feedback_name{
+    text-align: center;
+    font-family: 'Nighty';
+    font-size: calc(48 * 100vw / 1920);
+    padding: 6% 0 4% 0;
+}
+.feedback_comment{
+    font-family: 'Poppins-Regular';
+    text-align: center;
+    margin: 0 auto;
+    font-size: calc(18 * 100vw / 1920);
+    line-height: 110%;
+    width: 90%;
+}
+.feedback_card:hover{
+    box-shadow: 1px 1px 25px 10px rgba(0, 0, 0, 0.4);
+}
+/*footer*/
+.footer{
+    background-color: #000000;
+}
+.footer_content{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: calc(120 * 100vw / 1920);
+}
+.footer_copyright{
+    color: #ffffff;
+    font-family: 'Poppins-Black';
+    font-size: calc(20 * 100vw / 1920);
+    text-align: center;
+}
+.footer_nav{
+    display: flex;
+    align-items: center;
+}
+.footer_nav a{
+    color: #ffffff;
+    font-family: 'Poppins-Regular';
+    font-size: calc(18 * 100vw / 1920);
+    margin-left: calc(30 * 100vw / 1920);
+}
+
+/*Адаптивность*/
+@media (max-width:650px){
+    .main{
+        padding: 24% 0 18% 0;
+    }
+    .main_title{
+        font-size: calc(160 * 100vw / 1920);
+    }
+    .main_description{
+        padding-top: 4%;
+        font-size: calc(64 * 100vw / 1920);
+    }
+    .main_text_block img:nth-child(1){
+        right: -10%;
+        bottom: -10%;
+    }
+    .main_text_block img:nth-child(4){
+        left: -6%;
+        top: -10%;
+    }
+    .content_gallery{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-gap: calc(0 * 100vw / 1920);
+    }
+    
+    .gallery_element{
+        border-radius: calc(48 * 100vw / 1920);
+    }
+    .gallery_element_big{
+        height: calc(400 * 100vw / 1920);
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        margin-top: calc(-50 * 100vw / 1920);
+        border-radius: calc(24 * 100vw / 1920);
+    }
+    .gallery_element.x310,.gallery_element.x535{
+        height:calc(620 * 100vw / 1920);
+    }
+    .gallery_element.x260{
+        height: calc(530 * 100vw / 1920);
+    }
+    .gallery_element.x350,.gallery_element.x465{
+        height: calc(700 * 100vw / 1920);
+    }
+    .gallery_element.x380,.gallery_element.x330{
+        height: calc(640 * 100vw / 1920);
+    }
+    .gallery_element.x400{
+        height: calc(810 * 100vw / 1920);
+    }
+    .gallery_element:nth-child(7){
+        margin-top: calc(-90 * 100vw / 1920);
+    }
+    .gallery_element:nth-child(n+2):nth-child(-n+5){
+        margin-top: calc(0 * 100vw / 1920);
+    }
+    .gallery_element:nth-child(9),.gallery_element:nth-child(11){
+       margin-top: calc(-170 * 100vw / 1920);
+    }
+    .gallery_element:nth-child(10),.gallery_element:nth-child(13){
+        margin-top: calc(-60 * 100vw / 1920);
+     }
+    .tour_block_content{
+        flex-direction: column-reverse;
+    }
+    .tour_block_right{
+        margin: 0 auto;
+    }
+    .tour_block_left{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 2%;
+    }
+    .tour_block_title{
+        font-size: calc(140 * 100vw / 1920);
+        text-align: center;
+    }
+    .tour_content_inscriptions{
+        font-size: calc(38 * 100vw / 1920);
+        padding: 4% 0 2% 0;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .tour_content_addition{
+        margin: 0 auto;
+        font-size: calc(36 * 100vw / 1920);
+    }
+    .tour_content_addition.people span, .tour_content_addition.price span, .tour_content_addition.date span{
+        font-size: calc(42 * 100vw / 1920);
+    }
+    .btn.tours{
+        width: 50%;
+    }
+    .tour_block_right{
+        width: 80%;
+    }
+    .bottom_content{
+        margin-top: -8%;
+    }
+    .tour_block_content,.indent{
+        margin-bottom: 6%;
+    }
+}
