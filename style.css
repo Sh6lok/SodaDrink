@@ -507,10 +507,26 @@ body::after{
         display: none;
     }
     .header_section,.header_section.service{
-        margin-bottom: 12%;
+        margin-bottom: 22%;
     }
     .header_section p{
-        font-size: calc(200 * 100vw / 1920);
+        font-size: calc(300 * 100vw / 1920);
+        line-height: 60%;
+        padding-top: 3%;
+        margin: 0 auto;
+        width: 70%;
+    }
+    .header_section .corner, .bottom_section .corner{
+        width: 16%;
+    }
+    .servis_stars{
+        width: 12%;
+        top: 20%;
+    }
+    .planet{
+        width: 8%;
+        top: 52%;
+        left: 5%;
     }
     .main_text_block img:nth-child(1){
         right: 0%;
@@ -522,11 +538,12 @@ body::after{
         top: -32%;
         width:60px;
     }
+
     /*галлерея*/
     .content_gallery{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 33.3%);
+        grid-template-columns: repeat(2, 50%);
         grid-gap: 0;
     }
     .gallery_element{
@@ -537,43 +554,49 @@ body::after{
         width: 98%;
         margin: 0 auto;
         grid-column-start: 1;
-        grid-column-end: 4;
+        grid-column-end: 3;
     }
     .gallery_element.x310,.gallery_element.x535{
-        height:calc(920 * 100vw / 1920);
+        height:calc(1220 * 100vw / 1920);
     }
     .gallery_element.x260{
-        height: calc(1220 * 100vw / 1920);
+        height: calc(1520 * 100vw / 1920);
     }
-    .gallery_element.x350,.gallery_element.x465{
+    .gallery_element.x350{
         height: calc(1100 * 100vw / 1920);
     }
     .gallery_element.x380,.gallery_element.x330{
-        height: calc(840 * 100vw / 1920);
+        height: calc(1840 * 100vw / 1920);
     }
     .gallery_element.x400{
-        height: calc(900 * 100vw / 1920);
+        height: calc(1300 * 100vw / 1920);
     }
-    .gallery_element:nth-child(2),.gallery_element:nth-child(3) {
-        margin-top: unset; /* Новое значение */
-    }
-    .gallery_element:nth-child(4),.gallery_element:nth-child(5) {
+    .gallery_element.x465{
+        height: calc(1600 * 100vw / 1920);
         margin-top: calc(-300 * 100vw / 1920);
     }
-
+    .gallery_element:nth-child(2),.gallery_element:nth-child(3),.gallery_element:nth-child(4),.gallery_element:nth-child(5) {
+        margin-top: unset;
+    }
+    .gallery_element:nth-child(6){
+        margin-top: calc(-300 * 100vw / 1920);
+    }
+    .gallery_element:nth-child(7){
+        margin-top: calc(-20 * 100vw / 1920);
+    }
     .gallery_element:nth-child(9),.gallery_element:nth-child(11){
        margin-top: calc(0 * 100vw / 1920);
     }
-    .gallery_element:nth-child(10),.gallery_element:nth-child(13){
-        margin-top: calc(0 * 100vw / 1920);
+    .gallery_element:nth-child(10){
+        margin-top: calc(-100 * 100vw / 1920);
      }
-     .gallery_element.gallery_element.x330{
+     .gallery_element.x330{
         display: none;
      }
      /*туры*/
     .tour_block_content,.indent{
         flex-direction: column-reverse;
-        margin-bottom: 12%;
+        margin: 24% 0;
     }
     .tour_block_right{
         margin: 0 auto;
@@ -625,14 +648,14 @@ body::after{
         margin: 30% 0 30% 0;
     }
     .slide-two .owl-item img{
-        width: calc(580 * 100vw / 1920);
-        height: calc(700 * 100vw / 1920);
+        width: calc(680 * 100vw / 1920);
+        height: calc(860 * 100vw / 1920);
     }
     .title_card_services{
-        font-size: calc(72 * 100vw / 1920);
+        font-size: calc(90 * 100vw / 1920);
     }
     .description_card_services{
-        font-size: calc(32 * 100vw / 1920);
+        font-size: calc(40 * 100vw / 1920);
         width: 90%;
     }
     /*отзывы*/
@@ -643,27 +666,54 @@ body::after{
         display: none;
     }
     .feedback_card{
-        width: calc(520 * 100vw / 1920);
-        height: calc(680 * 100vw / 1920);
+        width: calc(660 * 100vw / 1920);
+        height: calc(890 * 100vw / 1920);
     }
     .feedback_name{
-        font-size: calc(72 * 100vw / 1920);
+        font-size: calc(90 * 100vw / 1920);
     }
     .feedback_comment{
-        font-size: calc(30 * 100vw / 1920);
+        font-size: calc(39 * 100vw / 1920);
     }
     .bottom_section{
         margin-top: -4%;
     }
     /*футер*/
     .footer_content{
-        height: calc(180 * 100vw / 1920);
+        height: calc(260 * 100vw / 1920);
      }
      .footer_copyright{
-        font-size: calc(32 * 100vw / 1920);
+        font-size: calc(44 * 100vw / 1920);
      }
      .footer_nav a{
-        font-size: calc(30 * 100vw / 1920);
+        font-size: calc(42 * 100vw / 1920);
+        margin-left: calc(40 * 100vw / 1920);
      }
      
+}
+@media (max-width:500px) {
+    .slide-two .owl-item img{
+        width: calc(1000 * 100vw / 1920);
+        height: calc(1300 * 100vw / 1920);
+    }
+    .title_card_services{
+        font-size: calc(120 * 100vw / 1920);
+    }
+    .description_card_services{
+        font-size: calc(54 * 100vw / 1920);
+        width: 90%;
+    }
+}
+@media (max-width:340px) {
+    .slide-two .owl-item img{
+        width: calc(1100 * 100vw / 1920);
+        height: calc(1200 * 100vw / 1920);
+    }
+    .title_card_services{
+        font-size: calc(120 * 100vw / 1920);
+    }
+    .description_card_services{
+        font-size: calc(52 * 100vw / 1920);
+        width: 90%;
+    }
 }
