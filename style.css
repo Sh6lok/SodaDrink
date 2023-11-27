@@ -20,7 +20,6 @@ body::after{
     pointer-events: none;
     z-index: -1;
     background: url(img/elements/noise.gif);
-
 }
 
 .container{
@@ -287,7 +286,7 @@ body::after{
 .gallery_element:nth-child(7){
     margin-top: calc(-70 * 100vw / 1920);
 }
-.gallery_element:nth-child(n+2):nth-child(-n+5){
+.gallery_element:nth-child(2),.gallery_element:nth-child(3),.gallery_element:nth-child(4),.gallery_element:nth-child(5){
     margin-top: calc(70 * 100vw / 1920);
 }
 .gallery_element:nth-child(9),.gallery_element:nth-child(11){
@@ -358,7 +357,7 @@ body::after{
 }
 
 .slide-one .owl-item img {
-    height:calc(900 * 100vw / 1920);
+    height:calc(700 * 100vw / 1920);
     object-fit: cover;
     border-radius: calc(24 * 100vw / 1920);
   }
@@ -473,14 +472,39 @@ body::after{
         width: 96%;
     }
     .main{
-        padding: 24% 0 18% 0;
+        padding: 48% 0 48% 0;
     }
+    .btn.nav{
+        font-size: calc(64 * 100vw / 1920);
+        width: 36%;
+    }
+    /*МЕНЮ*/
+    .header{
+        opacity: 1;
+        background-color: #ececec;
+        position: relative;
+        height: 6vh;
+    }
+    .nav_element{
+        font-size: calc(52 * 100vw / 1920);
+     }
+     .nav_element a{
+        margin: calc(20 * 100vw / 1920);
+     }
+     .btn.nav{
+        height: 60%;
+     }
+    /*НАЧАЛО*/
     .main_title{
-        font-size: calc(160 * 100vw / 1920);
+        font-size: calc(200 * 100vw / 1920);
     }
     .main_description{
         padding-top: 4%;
-        font-size: calc(64 * 100vw / 1920);
+        font-size: calc(92 * 100vw / 1920);
+        width: 80%;
+    }
+    .main_description br{
+        display: none;
     }
     .header_section,.header_section.service{
         margin-bottom: 12%;
@@ -489,58 +513,62 @@ body::after{
         font-size: calc(200 * 100vw / 1920);
     }
     .main_text_block img:nth-child(1){
-        right: 4%;
-        bottom: -10%;
+        right: 0%;
+        bottom: -32%;
+        width:60px;
     }
     .main_text_block img:nth-child(4){
-        left: 4%;
-        top: -12%;
+        left: 0%;
+        top: -32%;
+        width:60px;
     }
     /*галлерея*/
     .content_gallery{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-gap: calc(0 * 100vw / 1920);
+        grid-template-columns: repeat(3, 33.3%);
+        grid-gap: 0;
     }
-    
     .gallery_element{
         border-radius: calc(48 * 100vw / 1920);
     }
     .gallery_element_big{
-        height: calc(400 * 100vw / 1920);
-        width: 100%;
-        grid-column-start: 2;
+        height: calc(900 * 100vw / 1920);
+        width: 98%;
+        margin: 0 auto;
+        grid-column-start: 1;
         grid-column-end: 4;
-        margin-top: calc(-50 * 100vw / 1920);
-        border-radius: calc(24 * 100vw / 1920);
     }
     .gallery_element.x310,.gallery_element.x535{
-        height:calc(620 * 100vw / 1920);
+        height:calc(920 * 100vw / 1920);
     }
     .gallery_element.x260{
-        height: calc(530 * 100vw / 1920);
+        height: calc(1220 * 100vw / 1920);
     }
     .gallery_element.x350,.gallery_element.x465{
-        height: calc(700 * 100vw / 1920);
+        height: calc(1100 * 100vw / 1920);
     }
     .gallery_element.x380,.gallery_element.x330{
-        height: calc(640 * 100vw / 1920);
+        height: calc(840 * 100vw / 1920);
     }
     .gallery_element.x400{
-        height: calc(810 * 100vw / 1920);
+        height: calc(900 * 100vw / 1920);
     }
-    .gallery_element:nth-child(7){
-        margin-top: calc(-90 * 100vw / 1920);
+    .gallery_element:nth-child(2),.gallery_element:nth-child(3) {
+        margin-top: unset; /* Новое значение */
     }
-    .gallery_element:nth-child(n+2):nth-child(-n+5){
-        margin-top: calc(0 * 100vw / 1920);
+    .gallery_element:nth-child(4),.gallery_element:nth-child(5) {
+        margin-top: calc(-300 * 100vw / 1920);
     }
+
     .gallery_element:nth-child(9),.gallery_element:nth-child(11){
-       margin-top: calc(-170 * 100vw / 1920);
+       margin-top: calc(0 * 100vw / 1920);
     }
     .gallery_element:nth-child(10),.gallery_element:nth-child(13){
-        margin-top: calc(-60 * 100vw / 1920);
+        margin-top: calc(0 * 100vw / 1920);
+     }
+     .gallery_element.gallery_element.x330{
+        display: none;
      }
      /*туры*/
     .tour_block_content,.indent{
@@ -557,28 +585,40 @@ body::after{
         margin-top: 2%;
     }
     .tour_block_title{
-        font-size: calc(140 * 100vw / 1920);
+        font-size: calc(240 * 100vw / 1920);
         text-align: center;
     }
     .tour_content_inscriptions{
-        font-size: calc(38 * 100vw / 1920);
-        padding: 4% 0 2% 0;
-        width: 80%;
+        font-size: calc(44 * 100vw / 1920);
+        padding: 4% 0;
+        width: 90%;
         text-align: center;
         margin: 0 auto;
     }
     .tour_content_addition{
         margin: 0 auto;
-        font-size: calc(36 * 100vw / 1920);
+        font-size: calc(48 * 100vw / 1920);
     }
     .tour_content_addition.people span, .tour_content_addition.price span, .tour_content_addition.date span{
-        font-size: calc(42 * 100vw / 1920);
+        font-size: calc(50 * 100vw / 1920);
     }
     .btn.tours{
-        width: 50%;
+        margin-top:calc(180 * 100vw / 1920);
+        font-size: calc(78 * 100vw / 1920);
+        width: 70%;
+    }
+    .btn.add{
+        font-size: calc(64 * 100vw / 1920);
+        width: 40%;
+    }
+    .tour_block_content:nth-child(2){
+        margin-bottom: 4%;
     }
     .bottom_content{
         margin-top: -8%;
+    }
+    .slide-one .owl-item img{
+        height: calc(1000 * 100vw / 1920);
     }
     /*сервисы*/
     .servis{
@@ -625,13 +665,5 @@ body::after{
      .footer_nav a{
         font-size: calc(30 * 100vw / 1920);
      }
-     .nav_element{
-        font-size: calc(36 * 100vw / 1920);
-     }
-     .nav_element a{
-        margin: calc(10 * 100vw / 1920);
-     }
-     .header{
-        display: none;
-     }
+     
 }
