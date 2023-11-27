@@ -4,14 +4,17 @@ $(document).ready(function(){
       margin:20,
       items:1,
       autoplay:true, 
-      smartSpeed:1000,
-      autoplayTimeout:3000, 
+      smartSpeed:1500,
+      autoplayTimeout:3500, 
     });
     $(".slide-two").owlCarousel({
       loop:true,
       responsive : {
-        0: {margin:0,stagePadding: 40,items:2},
-        400:{margin:0,stagePadding: 80, items:2},
+        0: {margin:0,stagePadding: 40,items:1},
+        230: {margin:0,stagePadding: 60,items:1},
+        320: {margin:0,stagePadding: 80,items:1},
+        400: {margin:0,stagePadding: 100,items:1},
+        500:{margin:0,stagePadding: 80, items:2},
         650:{stagePadding: 60},
         800 : {stagePadding: 150},
         1024 : {margin: 30,stagePadding: 140},
