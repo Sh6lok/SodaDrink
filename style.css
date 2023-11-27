@@ -605,7 +605,7 @@ body::after{
     .tour_block_left{
         width: 70%;
         margin: 0 auto;
-        margin-top: 2%;
+        margin-top: 6%;
     }
     .tour_block_title{
         font-size: calc(240 * 100vw / 1920);
@@ -644,7 +644,7 @@ body::after{
         height: calc(1000 * 100vw / 1920);
     }
     /*сервисы*/
-    .servis{
+    .servis,.tours{
         margin: 30% 0 30% 0;
     }
     .slide-two .owl-item img{
@@ -666,14 +666,14 @@ body::after{
         display: none;
     }
     .feedback_card{
-        width: calc(660 * 100vw / 1920);
-        height: calc(890 * 100vw / 1920);
+        width: calc(760 * 100vw / 1920);
+        height: calc(1100 * 100vw / 1920);
     }
     .feedback_name{
-        font-size: calc(90 * 100vw / 1920);
+        font-size: calc(120 * 100vw / 1920);
     }
     .feedback_comment{
-        font-size: calc(39 * 100vw / 1920);
+        font-size: calc(48 * 100vw / 1920);
     }
     .bottom_section{
         margin-top: -4%;
