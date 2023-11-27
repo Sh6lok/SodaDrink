@@ -544,7 +544,7 @@ body::after{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 50%);
-        grid-gap: 0;
+        grid-gap: calc(10 * 100vw / 1920);
     }
     .gallery_element{
         border-radius: calc(48 * 100vw / 1920);
