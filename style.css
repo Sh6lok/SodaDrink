@@ -644,7 +644,7 @@ body::after{
         height: calc(1000 * 100vw / 1920);
     }
     /*сервисы*/
-    .servis,.tours{
+    .servis,section.tours{
         margin: 30% 0 30% 0;
     }
     .slide-two .owl-item img{
